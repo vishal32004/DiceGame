@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dicee</title>
+  <!---- favicon -->
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <!---- css stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <!---- font -->
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+  <!----- font Awesome -->
+  <script src="https://kit.fontawesome.com/bd22206d98.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class = "result"><i class="fas fa-dice-six"></i> Roll the dice <i class="fas fa-dice-six"></i></h1>
+    <div>
+      <button class="rollBtn" onclick="onRollButtonClick()"> <i class="fas fa-dice-d6  rollBtnAnimation"></i></button>
+      
+      <h4>Click</h4>
+    </div>
+    <div class="dice">
+      <p>Player 1</p>
+      <!-- Celebration Animation -->
+      <div class="confetti dice1 diceCelebrate">
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+      </div>
+      <i class="playerOneDice fas fa-dice-one img"></i>
+    </div>
+
+    <div class="dice">
+      <p>Player 2</p>
+      <div class="confetti dice2 diceCelebrate">
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+      </div>
+      <i class="playerTwoDice fas fa-dice-one img"></i>
+    </div>
+  </div>
+
+  <section id="footer">
+
+  <a href="#"><i class="social-icon fab fa-instagram"></i></a>
+  <a href="#"><i class="social-icon fab fa-github"></i></a>
+  <a href="#"><i class="social-icon fas fa-envelope"></i></a>
+  <p>Website design and made by <a class="footer-link" href="">Vishal Tiwari</a>
+  </p>
+  </section>
+
+  <script src="index.js" charset="utf-8"></script>
+</body>
+</html>

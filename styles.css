@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/******************** Tags Selector **************/
+
+body {
+  background-color: #B73E3E;
+}
+
+h1 {
+  font-size: 7rem;
+  padding-bottom: 0;
+}
+
+h4 {
+  margin-top: 0;
+}
+
+
+
+
+
+p {
+  font-size: 2rem;
+}
+
+
+/**** class selectors ****/
+
+.container {
+  color: #D8D8D8;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.rollBtn {
+  border-style: none;
+  background-color: transparent;
+  color: #d4ecdd;
+  font-size: 7rem;
+  transition: all 0.2s ease-in-out;
+}
+.rollBtnAnimation {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite  alternate;
+}
+
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+
+.rollBtn:hover {
+  transform: scale(1.1);
+}
+
+.clickAnimation {
+  animation: rotation linear 0.3s;
+  color: #112031;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(359deg);
+  }
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+  padding: 0 90px;
+  padding-top: 100px;
+}
+
+.winnerDice {
+  color: #152d35;
+}
+
+.img {
+  font-size: 10rem;
+}
+
+@media screen and (max-width: 1259px) {
+  .container{
+      width: 100%;
+  }
+  h1{
+      /* color: red; */
+      font-size: 250%;
+  }
+  .rollBtn{
+      /* color: red; */
+      font-size: 250%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .container{
+      width: 100%;
+  }
+  .rollBtn{
+      /* color: red; */
+      font-size: 250%;
+      padding: 0;
+  }
+  h1{
+      /* color: green; */
+      font-size: 220%;
+  }
+
+  p{
+      font-size: 1rem;
+
+  }
+  .dice{
+      padding: 0 30px;
+  }
+  .img{
+      font-size: 10rem;
+      padding: 0;
+  }
+}
+
+.confetti {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 9rem;
+  height: 40%;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.diceCelebrate {
+  display: none;
+}
+
+.confetti-piece {
+  position: absolute;
+  width: 10px;
+  height: 30px;
+  background: #ffd300;
+  top: 0;
+  opacity: 0;
+}
+
+.confetti-piece:nth-child(1) {
+  left: 7%;
+  -webkit-transform: rotate(-40deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 182ms;
+  -webkit-animation-duration: 1116ms;
+}
+.confetti-piece:nth-child(2) {
+  left: 14%;
+  -webkit-transform: rotate(4deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 161ms;
+  -webkit-animation-duration: 1076ms;
+}
+.confetti-piece:nth-child(3) {
+  left: 21%;
+  -webkit-transform: rotate(-51deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 481ms;
+  -webkit-animation-duration: 1103ms;
+}
+.confetti-piece:nth-child(4) {
+  left: 28%;
+  -webkit-transform: rotate(61deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 334ms;
+  -webkit-animation-duration: 708ms;
+}
+.confetti-piece:nth-child(5) {
+  left: 35%;
+  -webkit-transform: rotate(-52deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 302ms;
+  -webkit-animation-duration: 776ms;
+}
+.confetti-piece:nth-child(6) {
+  left: 42%;
+  -webkit-transform: rotate(38deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 180ms;
+  -webkit-animation-duration: 1168ms;
+}
+.confetti-piece:nth-child(7) {
+  left: 49%;
+  -webkit-transform: rotate(11deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 395ms;
+  -webkit-animation-duration: 1200ms;
+}
+.confetti-piece:nth-child(8) {
+  left: 56%;
+  -webkit-transform: rotate(49deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 14ms;
+  -webkit-animation-duration: 887ms;
+}
+.confetti-piece:nth-child(9) {
+  left: 63%;
+  -webkit-transform: rotate(-72deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 149ms;
+  -webkit-animation-duration: 805ms;
+}
+.confetti-piece:nth-child(10) {
+  left: 70%;
+  -webkit-transform: rotate(10deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 351ms;
+  -webkit-animation-duration: 1059ms;
+}
+.confetti-piece:nth-child(11) {
+  left: 77%;
+  -webkit-transform: rotate(4deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 307ms;
+  -webkit-animation-duration: 1132ms;
+}
+.confetti-piece:nth-child(12) {
+  left: 84%;
+  -webkit-transform: rotate(42deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 464ms;
+  -webkit-animation-duration: 776ms;
+}
+.confetti-piece:nth-child(13) {
+  left: 91%;
+  -webkit-transform: rotate(-72deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 429ms;
+  -webkit-animation-duration: 818ms;
+}
+.confetti-piece:nth-child(odd) {
+  background: #7431e8;
+}
+.confetti-piece:nth-child(even) {
+  z-index: 1;
+}
+.confetti-piece:nth-child(4n) {
+  width: 5px;
+  height: 12px;
+  -webkit-animation-duration: 2000ms;
+}
+.confetti-piece:nth-child(3n) {
+  width: 3px;
+  height: 10px;
+  -webkit-animation-duration: 2500ms;
+  -webkit-animation-delay: 1000ms;
+}
+.confetti-piece:nth-child(4n-7) {
+  background: red;
+}
+@-webkit-keyframes makeItRain {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateY(350px);
+  }
+}
+
+
+
+/*************** footer animation *************/
+
+#footer {
+  padding-top: 4%;
+  margin-bottom: 4%;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1;
+  padding-bottom: 10px;
+}
+ 
+
+/* transition and animation in social icons  */
+
+.social-icon {
+  color: #D8D8D8;
+  font-size: 2rem;
+  padding: 1% 1%;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-icon.fa-instagram:hover {
+  color: #D8D8D8;
+  transform: scale(1.5);
+}
+
+.social-icon.fa-github:hover {
+  color: #D8D8D8;
+  transform: scale(1.5);
+}
+
+.social-icon.fa-envelope:hover {
+  color: #D8D8D8;
+  transform: scale(1.5);
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #D8D8D8;
+}
+
